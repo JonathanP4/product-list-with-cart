@@ -37,7 +37,7 @@
 		</section>
 	{:else}
 		<div>
-			<ul class="max-h-[330px] overflow-y-scroll pr-3">
+			<ul class="max-h-[330px] overflow-y-auto pr-3">
 				{#each $cart as item}
 					<CartItem {item} />
 				{/each}

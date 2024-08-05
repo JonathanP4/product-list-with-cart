@@ -13,12 +13,12 @@
 </script>
 
 <div
-	class={`${showConfirmCard ? "translate-y-0" : "translate-y-full"} duration-0 fixed z-50 bg-black/60 bottom-0 left-0 right-0 h-screen`}
+	class={`${showConfirmCard ? "translate-y-0" : "translate-y-full"} duration-0 delay-300 fixed z-50 bg-black/60 bottom-0 left-0 right-0 h-screen`}
 />
 <div
-	class={`${showConfirmCard ? "translate-y-0" : "translate-y-full"} duration-500 fixed bottom-0 h-[87svh] left-0 right-0 p-6 bg-white z-50 rounded-t-2xl`}
+	class={`${showConfirmCard ? "translate-y-0 md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2 " : "translate-y-full"} duration-500 fixed bottom-0 h-[87svh] left-0 right-0 p-6 bg-white z-50 rounded-t-2xl md:rounded-xl md:max-w-lg`}
 >
-	<section class="max-w-min mb-4">
+	<section class="max-w-min md:max-w-full mb-4">
 		<svg
 			width="48"
 			height="48"
@@ -39,7 +39,9 @@
 		<h1 class="text-4xl font-bold text-rose-900 mt-6">Order Confirmed</h1>
 		<p class="text-nowrap text-rose-500">We hope you enjoy your food!</p>
 	</section>
-	<section class="bg-rose-50 p-4 rounded-lg overflow-y-scroll max-h-[215px]">
+	<section
+		class="bg-rose-50 p-4 rounded-lg overflow-y-auto h-[215px] md:h-[300px]"
+	>
 		<ul>
 			{#each $cart as item}
 				<OrderItem {item} />
