@@ -13,10 +13,10 @@
 </script>
 
 <div
-	class={`${showConfirmCard ? "translate-y-0" : "translate-y-full"} hidden duration-0 delay-300 fixed z-50 bg-black/60 bottom-0 left-0 right-0 h-screen`}
+	class={`${showConfirmCard ? "translate-y-0" : "translate-y-full"} duration-0 delay-300 fixed z-50 bg-black/60 bottom-0 left-0 right-0 h-screen`}
 />
 <div
-	class={`hidden ${showConfirmCard ? "translate-y-0 md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2 " : "translate-y-full"} duration-500 fixed bottom-0 h-[87svh] left-0 right-0 p-6 bg-white z-50 rounded-t-2xl md:rounded-xl md:max-w-lg`}
+	class={`${showConfirmCard ? "translate-y-0 md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2 " : "translate-y-full"} duration-500 fixed bottom-0 h-[87svh] left-0 right-0 p-6 bg-white z-50 rounded-t-2xl md:rounded-xl md:max-w-lg`}
 >
 	<section class="max-w-min md:max-w-full mb-4">
 		<svg
