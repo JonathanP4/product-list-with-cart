@@ -23,7 +23,7 @@
 	</figure>
 	<CartButton {item} {selectItem} />
 	<p class="text-rose-300 mt-4">{item.category}</p>
-	<h2 class="text-rose-900 text-lg font-semibold">{name}</h2>
+	<h2 class="text-rose-900 text-lg font-semibold">{item.name}</h2>
 	<p class="text-red font-semibold text-lg">
 		{formatCurrency(item.price)}
 	</p>
